@@ -1,0 +1,26 @@
+Anotacion: para comenzar a jugar se debe introducir un nombre y posteriormente cargar la base de datos accdb que se encuentra en /bin/debug dentro del proyecto para posteriormente clickar sobre jugar.
+
+Adaptabilidad de la interfaz: considero que la puntuacion es de 1 punto puesto que en general todo se redimensiona y se coloca de forma adecuada pese a que los textos no se redimensionan en tamaño de fuente al maximizar, algunos logros se cortan al minimizar y el dragon no se centra al maximizar
+
+Formas basicas e imagenes: considero que la puntuacion es de 2 puntos puesto que ademas del diseño del tamagotchi con formas basicas se han realizado otros elementos como llamas de fuego o un rayo que en este caso sirve para rellenar las barras de progreso. Ademas tambien se hace bastante uso de imagenes tanto de fondo, como para coleccionables, etc.
+
+Animaciones y dinamismo: considero que la puntuacion es 3 debido a que ademas de las animacciones de estados y efectos negativos, se ha incluido alguna otra como un elemento que se desliza por la interfaz cada 10 segundos para rellenar las barras de progreso o la del final cuando el tamagotchi vacia alguna de sus barras y finaliza el juego.
+
+Estilos de interaccion: considero que la puntuacion es de 2 ya que se incluyen controles de visualizacion de datos como pueden ser los puntos de la partida en tiempo real, un ranking, asi como dialogos en casos de error como por ejemplo intentar jugar sin cargar la base de datos, de advertencia avisando al jugador si por ejemplo realmente desea salir de la aplicacion, de informacion como por ejemplo al pasar de nivel y tambien se emplea la tecnica de arrastrar y soltar con un gorro de navidad, una corona y un tatuaje.
+
+Jugabilidad: considero que la puntuacion es de 3, se han empleado diversas tecnicas:
+	-Logros: se emplea uso de logros como haber jugado, comido y descansado ademas de alcanzar el nivel 3 lo cual indica al jugador que hay niveles y que puede ir progresando cuantos mayores sean sus puntos. Tambien aparece un logro de alcanzar el top 1 pero en este caso es desconocido por parte del jugador. 
+
+	-Niveles:en este caso existen 3 niveles lo cual cada uno de ellos se incrementa cada 100 puntos
+	
+	-Ranking: en este caso se muestra un ranking de los jugadores mostrando de fondo azul al jugador actual, en amarillo el top 1 ademas de dos jugadores que van por encima y por debajo en el top. En algunos casos el ranking no funciona y tras varios intentos he comprobado que es porque a veces se hacen los update en la base de datos de forma concurrente por lo que no asigna bien los top pero en general la mayoria de veces funciona. El ranking se actualiza cada 10 segundos.
+
+	-Sorpresa: en este caso lo que el jugador no se espera es que al alcanzar el top 1 se desbloque un logro proporcionandole un premio, una corona.
+
+	-Puntos/Niveles: en este caso al igual que los niveles, se van mostrando los puntos en tiempo real de cada partida. De la misma forma se muestran todos los puntos de todas las partidas en el ranking
+	
+	-Bonus y combos: en este caso el bonus es un elemento que aparece en la pantalla cada 10 segundos junto con un rayo que al pulsarlo incrementa en 10 cada una de las barras de progreso. 
+
+	-Narrativa: en este caso la narrativa es sencilla, intenta adentrarte en la serie juego de tronos siendo un dragon que debe pasar por diferentes parajes para llegar a desembarco del rey y conseguir el trono de hierro. Cada vez que se incrementa de nivel en un cuadro de dialogo se actualiza la historia y se desbloquean paisajes.
+	
+
