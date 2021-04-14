@@ -1,0 +1,53 @@
+﻿<Window x:Class="Tamagotchi.VentanaBienvenida"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tamagotchi"
+        mc:Ignorable="d"
+        Title="VentanaBienvenida" Height="300" Width="600" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="https://images-na.ssl-images-amazon.com/images/I/81DCa9NmVnL.png">
+    <Grid>
+        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="cargaTamagotchi32000.jpg" Margin="0,-67,-18,-64" Height="431" Width="618" OpacityMask="Black"/>
+        <Label x:Name="lblNombreTamagotchi" Content="Escriba el nombre del Tamagotchi" HorizontalAlignment="Left" Margin="51,175,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" OpacityMask="#FF853535" Background="{x:Null}">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF5100" Offset="0.339"/>
+                    <GradientStop Color="#FF1FAFCF" Offset="0.6"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF112E10" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+        </Label>
+        <TextBox x:Name="tbNombreTamagotchi" HorizontalAlignment="Left" Height="23" Margin="392,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FF114BF9" FontSize="16"/>
+        <Button x:Name="btEmpezar" Content="" HorizontalAlignment="Left" Margin="529,182,0,0" VerticalAlignment="Top" Width="27" Click="enviarNombre" Height="26" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="check.png"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="122" Margin="152,10,0,0" VerticalAlignment="Top" Width="278" Source="iconoTamagotchi.png"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="560,0,0,0" VerticalAlignment="Top" Width="40" Height="30" Foreground="White" BorderBrush="Red" Background="Red" Click="abandonar"/>
+        <ProgressBar x:Name="pbFuego" HorizontalAlignment="Left" Height="20" Margin="298,245,0,0" VerticalAlignment="Top" Width="255" BorderBrush="{x:Null}" Background="{x:Null}">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF97FF00" Offset="1"/>
+                    <GradientStop Color="#FFFFAE00" Offset="0.369"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+        <ProgressBar x:Name="pbHielo" HorizontalAlignment="Left" Height="20" Margin="43,245,0,0" VerticalAlignment="Top" Width="255" BorderBrush="{x:Null}" ValueChanged="cargarSegundoPB" Background="{x:Null}">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF21D8D8" Offset="0.305"/>
+                    <GradientStop Color="#FF0A6EE6" Offset="0.798"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+
+    </Grid>
+</Window>
